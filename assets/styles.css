@@ -318,3 +318,267 @@ details p { margin-top:0; padding-bottom:12px; }
   .footer-inner { grid-template-columns:1fr; }
   .footer-links { justify-content:flex-start; }
 }
+/* =========================================
+   MOBILE POLISH
+   ========================================= */
+
+@media (max-width: 620px) {
+  body {
+    font-size: 16px;
+  }
+
+  .header-inner {
+    padding: 11px 16px;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand {
+    font-size: 0.95rem;
+    gap: 8px;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav {
+    gap: 6px;
+  }
+
+  .nav a {
+    font-size: 0.88rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 3px;
+  }
+
+  .hero {
+    padding: 28px 16px 18px;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .hero-points {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .hero-point {
+    font-size: 0.84rem;
+  }
+
+  .calculator-wrap {
+    padding: 12px 10px 50px;
+  }
+
+  .calculator-card {
+    border-radius: 18px;
+  }
+
+  .calculator-head,
+  .inputs,
+  .results {
+    padding: 18px;
+  }
+
+  .calculator-head {
+    gap: 14px;
+  }
+
+  .calculator-head h2 {
+    font-size: 1.4rem;
+  }
+
+  .calculator-head p {
+    font-size: 0.95rem;
+  }
+
+  .unit-toggle {
+    width: 100%;
+  }
+
+  .unit-toggle button {
+    flex: 1;
+    min-height: 44px;
+    font-size: 0.9rem;
+  }
+
+  .shape-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .shape-btn {
+    min-height: 46px;
+    padding: 8px 5px;
+    font-size: 0.84rem;
+  }
+
+  .field-grid {
+    gap: 18px;
+  }
+
+  label {
+    font-size: 0.92rem;
+    margin-bottom: 7px;
+  }
+
+  input,
+  select {
+    min-height: 50px;
+    font-size: 1rem;
+  }
+
+  .unit-suffix {
+    font-size: 0.88rem;
+  }
+
+  .field-help {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-top: 7px;
+  }
+
+  .divider {
+    margin: 20px 0;
+  }
+
+  .calculate-btn {
+    min-height: 54px;
+    font-size: 1rem;
+  }
+
+  .results-kicker {
+    font-size: 0.82rem;
+  }
+
+  .primary-result {
+    margin: 8px 0 20px;
+  }
+
+  .primary-result strong {
+    font-size: 2.55rem;
+  }
+
+  .primary-result span {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .result-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .result-box {
+    padding: 12px;
+  }
+
+  .result-box:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .result-box span {
+    font-size: 0.84rem;
+  }
+
+  .result-box strong {
+    font-size: 1.08rem;
+  }
+
+  .result-note {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .content {
+    padding: 0 16px 56px;
+  }
+
+  .section {
+    padding: 29px 0;
+  }
+
+  .section h2 {
+    font-size: 1.75rem;
+    line-height: 1.15;
+  }
+
+  .section h3 {
+    font-size: 1.15rem;
+  }
+
+  .section p,
+  .section li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .steps {
+    gap: 16px;
+  }
+
+  .step {
+    grid-template-columns: 34px 1fr;
+    gap: 11px;
+  }
+
+  .callout {
+    padding: 15px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 620px;
+  }
+
+  th,
+  td {
+    font-size: 0.9rem;
+    padding: 11px 12px;
+  }
+
+  details {
+    padding: 0 14px;
+  }
+
+  summary {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+  }
+
+  .footer-inner {
+    padding: 25px 16px;
+    gap: 17px;
+  }
+
+  .footer-copy {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .footer-links {
+    gap: 5px 15px;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
