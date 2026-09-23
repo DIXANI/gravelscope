@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gravel Calculator – Tons, Yards & Cost | GravelScope</title>
+  <meta name="description" content="Free gravel calculator for yards, tons, bags and cost. Enter your project size, depth and gravel type to estimate how much material you need.">
+  <link rel="canonical" href="https://gravelscope.website/">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gravel Calculator – Tons, Yards & Cost | GravelScope">
+  <meta property="og:description" content="Estimate gravel volume, weight, bags and cost in seconds. Free, private and easy to use.">
+  <meta property="og:url" content="https://gravelscope.website/">
+  <meta name="theme-color" content="#365f46">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "GravelScope Gravel Calculator",
+    "url": "https://gravelscope.website/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript",
+    "offers": {"@type":"Offer","price":"0","priceCurrency":"USD"},
+    "description": "Free gravel calculator that estimates volume, weight, bags and material cost for gravel projects.",
+    "publisher": {"@type":"Organization","name":"GravelScope","url":"https://gravelscope.website/"}
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#calculator">Skip to calculator</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="GravelScope home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m3 17 4-11 6 3 7 8-6 4H7Z" fill="currentColor"/><path d="m7 6 4 10 9 1" stroke="#c8913f" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+      <span>GravelScope</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#calculator">Calculator</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="/about/">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <span class="eyebrow">Free gravel estimator</span>
+      <h1>Know how much gravel to order.</h1>
+      <p class="hero-copy">Calculate gravel volume, weight, bag count and estimated material cost for driveways, paths, garden beds and other projects. Use US or metric units.</p>
+      <div class="hero-points" aria-label="Key features">
+        <span class="hero-point">No signup</span>
+        <span class="hero-point">US & metric units</span>
+        <span class="hero-point">Works in your browser</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="stone-stack">
+        <span class="stone" style="--w:110px;--h:82px;--x:10%;--y:54%;--r:-10deg"></span>
+        <span class="stone" style="--w:155px;--h:112px;--x:28%;--y:36%;--r:8deg"></span>
+        <span class="stone" style="--w:95px;--h:75px;--x:58%;--y:18%;--r:-14deg"></span>
+        <span class="stone" style="--w:85px;--h:65px;--x:66%;--y:62%;--r:17deg"></span>
+      </div>
+      <div class="visual-label">Measure the area → choose depth → estimate volume and weight.</div>
+    </div>
+  </section>
+
+  <section class="calculator-wrap" id="calculator" aria-labelledby="calculator-title">
+    <div class="calculator-card">
+      <div class="calculator-head">
+        <div>
+          <h2 id="calculator-title">Gravel Calculator</h2>
+          <p>Estimate order volume, weight, bags and cost.</p>
+        </div>
+        <div class="unit-toggle" role="group" aria-label="Unit system">
+          <button type="button" class="active" data-system="us" aria-pressed="true">US units</button>
+          <button type="button" data-system="metric" aria-pressed="false">Metric</button>
+        </div>
+      </div>
+
+      <form id="gravel-form" class="calculator-body" novalidate>
+        <div class="inputs">
+          <label>Project shape</label>
+          <div class="shape-row" role="group" aria-label="Project shape">
+            <button class="shape-btn active" type="button" data-shape="rectangle" aria-pressed="true">Rectangle</button>
+            <button class="shape-btn" type="button" data-shape="circle" aria-pressed="false">Circle</button>
+            <button class="shape-btn" type="button" data-shape="area" aria-pressed="false">Known area</button>
+          </div>
+
+          <hr class="divider">
+
+          <div id="rect-fields" class="field-grid">
+            <div class="field">
+              <label for="length">Length</label>
+              <div class="input-wrap input-with-unit"><input id="length" type="number" min="0" step="any" value="20" inputmode="decimal"><span class="unit-suffix" data-unit="length">ft</span></div>
+            </div>
+            <div class="field">
+              <label for="width">Width</label>
+              <div class="input-wrap input-with-unit"><input id="width" type="number" min="0" step="any" value="10" inputmode="decimal"><span class="unit-suffix" data-unit="length">ft</span></div>
+            </div>
+          </div>
+
+          <div id="circle-fields" class="field-grid hidden">
+            <div class="field full">
+              <label for="diameter">Diameter</label>
+              <div class="input-wrap input-with-unit"><input id="diameter" type="number" min="0" step="any" value="12" inputmode="decimal"><span class="unit-suffix" data-unit="length">ft</span></div>
+            </div>
+          </div>
+
+          <div id="area-fields" class="field-grid hidden">
+            <div class="field full">
+              <label for="known-area">Area</label>
+              <div class="input-wrap input-with-unit"><input id="known-area" type="number" min="0" step="any" value="200" inputmode="decimal"><span class="unit-suffix" data-unit="area">sq ft</span></div>
+            </div>
+          </div>
+
+          <div class="field-grid" style="margin-top:16px">
+            <div class="field">
+              <label for="depth">Gravel depth</label>
+              <div class="input-wrap input-with-unit"><input id="depth" type="number" min="0" step="any" value="2" inputmode="decimal"><span class="unit-suffix" data-unit="depth">in</span></div>
+            </div>
+            <div class="field">
+              <label for="waste">Extra allowance</label>
+              <div class="input-wrap input-with-unit"><input id="waste" type="number" min="0" step="1" value="10" inputmode="numeric"><span class="unit-suffix">%</span></div>
+              <p class="field-help">Useful for waste, settlement and compaction.</p>
+            </div>
+          </div>
+
+          <hr class="divider">
+
+          <div class="field-grid">
+            <div class="field full">
+              <label for="material">Gravel type</label>
+              <select id="material">
+                <option value="general">General gravel</option>
+                <option value="pea">Pea gravel</option>
+                <option value="crushed">Crushed stone</option>
+                <option value="river">River rock</option>
+                <option value="custom">Custom density</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="density">Bulk density</label>
+              <div class="input-wrap input-with-unit"><input id="density" type="number" min="0" step="any" value="99.9" inputmode="decimal"><span class="unit-suffix" data-unit="density">lb/ft³</span></div>
+              <p class="field-help">Preset values are planning estimates. Supplier data is more accurate.</p>
+            </div>
+            <div class="field">
+              <label for="bag-size">Bag size</label>
+              <div class="input-wrap input-with-unit"><input id="bag-size" type="number" min="0" step="any" value="50" inputmode="decimal"><span class="unit-suffix" data-unit="bag">lb</span></div>
+            </div>
+            <div class="field full">
+              <label for="price">Price per ton <span style="font-weight:500;color:#718078">(optional)</span></label>
+              <input id="price" type="number" min="0" step="any" placeholder="e.g. 45" inputmode="decimal">
+              <p class="field-help"><span data-unit="price">$ / short ton</span>. Enter the material price only; delivery fees are not included.</p>
+            </div>
+          </div>
+
+          <button class="calculate-btn" type="submit">Calculate gravel</button>
+          <div id="calc-error" class="error-box" role="alert"></div>
+        </div>
+
+        <aside class="results" aria-live="polite" aria-label="Calculation results">
+          <div class="results-kicker">Estimated order</div>
+          <div class="primary-result">
+            <strong id="primary-value">1.36 yd³</strong>
+            <span id="primary-label">order volume including 10% allowance</span>
+          </div>
+          <div class="result-grid">
+            <div class="result-box"><span>Alternate volume</span><strong id="volume-alt">36.67 ft³</strong></div>
+            <div class="result-box"><span>Estimated weight</span><strong id="weight-main">1.83 short tons</strong></div>
+            <div class="result-box"><span>Weight detail</span><strong id="weight-alt">3,660 lb</strong></div>
+            <div class="result-box"><span>Bags needed</span><strong id="bags">74 bags</strong></div>
+            <div class="result-box"><span>Material cost</span><strong id="cost">Optional</strong></div>
+          </div>
+          <p class="result-note" id="result-note">Results are planning estimates. Material density, moisture, grading and compaction can change the actual quantity required.</p>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <div class="content">
+    <section class="section" id="how-it-works">
+      <h2>How to calculate how much gravel you need</h2>
+      <p>Gravel is usually measured by volume for the project area and sold either by weight, bulk volume or bags. GravelScope calculates the project volume first, then uses the selected bulk density to estimate weight.</p>
+      <div class="steps">
+        <div class="step"><div><strong>Measure the project area.</strong><span>Enter the length and width, circle diameter, or an area you already know.</span></div></div>
+        <div class="step"><div><strong>Choose the finished gravel depth.</strong><span>Use the depth your project requires rather than guessing from the total material pile.</span></div></div>
+        <div class="step"><div><strong>Select the material and allowance.</strong><span>Density converts volume into weight. Add an allowance for waste, settlement or compaction when appropriate.</span></div></div>
+      </div>
+      <div class="callout"><strong>Formula:</strong> volume = area × depth. Estimated weight = adjusted volume × bulk density. Gravel density can vary with stone size, moisture and grading, so use your supplier's density whenever they provide one.</div>
+    </section>
+
+    <section class="section">
+      <h2>What gravel depth should you use?</h2>
+      <p>The correct depth depends on the material and the job. Decorative landscape gravel may use a relatively shallow layer, while driveways and load-bearing bases often need deeper, compacted layers and sometimes multiple materials.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Project</th><th>Planning range</th><th>What to check</th></tr></thead>
+          <tbody>
+            <tr><td>Decorative gravel</td><td>About 2–3 in</td><td>Stone size, weed membrane and desired coverage</td></tr>
+            <tr><td>Garden paths</td><td>About 2–4 in</td><td>Foot traffic, edging and base condition</td></tr>
+            <tr><td>Driveway surface</td><td>About 3–4+ in</td><td>Vehicle load, sub-base, drainage and compaction</td></tr>
+            <tr><td>Base layer</td><td>Project-specific</td><td>Local construction requirements and engineer/contractor guidance</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="field-help">These are general planning ranges, not engineering specifications. Local soil conditions, drainage and load requirements can change the correct depth.</p>
+    </section>
+
+    <section class="section">
+      <h2>Why tons and cubic yards can differ</h2>
+      <p>A cubic yard measures volume; a ton measures weight. The same cubic-yard volume can weigh differently depending on the gravel type, particle size, moisture and how tightly the material is packed. That is why GravelScope shows both volume and estimated weight instead of using one fixed “yards-to-tons” conversion for every material.</p>
+      <h3>Should you add extra gravel?</h3>
+      <p>Often, yes. Real projects can lose material to uneven ground, settlement, compaction, spreading and measurement error. The calculator starts with a 10% allowance, but you can change it to match your project. For a large or structural job, ask the supplier or contractor what allowance they recommend.</p>
+    </section>
+
+    <section class="section">
+      <h2>Worked example</h2>
+      <p>Suppose a rectangular area is 20 ft long and 10 ft wide with a 2 in gravel layer. The base volume is about 33.3 cubic feet. Adding a 10% allowance gives about 36.7 cubic feet, or about 1.36 cubic yards. The weight then depends on the selected bulk density.</p>
+      <p>This is why changing the gravel type in the calculator can change the tonnage without changing the project dimensions.</p>
+    </section>
+
+    <section class="section" id="faq">
+      <h2>Gravel calculator FAQ</h2>
+      <div class="faq">
+        <details><summary>How accurate is this gravel calculator?</summary><p>The geometry is calculated directly from the dimensions you enter. Weight is an estimate because bulk density varies between materials, suppliers, moisture levels and gradations. For ordering, replace the preset density with supplier data when possible.</p></details>
+        <details><summary>How do I calculate gravel for a driveway?</summary><p>Measure the driveway length and width, enter the planned layer depth, then select the closest material type. For driveways, the correct base structure and compaction depend on soil, drainage and vehicle load, so use local contractor or engineering guidance for the required layers.</p></details>
+        <details><summary>How many bags of gravel do I need?</summary><p>Enter the bag size shown by your supplier. GravelScope divides the estimated project weight by the bag weight and rounds up to the next whole bag.</p></details>
+        <details><summary>Why should I add a waste or compaction allowance?</summary><p>An allowance helps account for uneven ground, spreading loss, settlement, compaction and measurement error. It is adjustable because the appropriate percentage depends on the job.</p></details>
+        <details><summary>Is GravelScope free?</summary><p>Yes. The calculator is free to use and does not require an account.</p></details>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m3 17 4-11 6 3 7 8-6 4H7Z" fill="currentColor"/><path d="m7 6 4 10 9 1" stroke="#c8913f" stroke-width="1.8" stroke-linecap="round"/></svg></span><span>GravelScope</span></a>
+      <div class="footer-copy">Free planning tools for gravel projects. Estimates only.</div>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclaimer/">Disclaimer</a>
+    </nav>
+  </div>
+</footer>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>
