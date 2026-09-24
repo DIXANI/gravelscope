@@ -1,0 +1,15 @@
+# GravelScope
+
+> GravelScope provides free browser-based planning tools for estimating gravel quantities, weight, bags and material cost.
+
+## Main Tool
+- https://gravelscope.website/ — Gravel Calculator for cubic yards, cubic feet, tons, kilograms, bags and estimated material cost.
+
+## Information
+- https://gravelscope.website/about/
+- https://gravelscope.website/disclaimer/
+
+## Policies
+- https://gravelscope.website/privacy-policy/
+- https://gravelscope.website/terms/
+- https://gravelscope.website/contact/
