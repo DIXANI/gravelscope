@@ -40,6 +40,13 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://gravelscope.website/#organization",
+      "name": "GravelScope",
+      "url": "https://gravelscope.website/",
+      "email": "hello@gravelscope.website"
+    },
+    {
       "@type": "WebSite",
       "@id": "https://gravelscope.website/#website",
       "url": "https://gravelscope.website/",
@@ -50,9 +57,18 @@
       "@id": "https://gravelscope.website/guides/extra-gravel-allowance/#article",
       "headline": "How Much Extra Gravel Should You Order?",
       "description": "Learn how to choose a sensible extra gravel allowance for waste, settlement, compaction, irregular areas and ordering uncertainty.",
-      "isPartOf": {"@id": "https://gravelscope.website/#website"},
+      "isPartOf": {
+        "@id": "https://gravelscope.website/#website"
+      },
       "articleSection": "Gravel Planning Guide",
-      "inLanguage": "en"
+      "inLanguage": "en",
+      "dateModified": "2026-10-17",
+      "author": {
+        "@id": "https://gravelscope.website/#organization"
+      },
+      "publisher": {
+        "@id": "https://gravelscope.website/#organization"
+      }
     },
     {
       "@type": "BreadcrumbList",

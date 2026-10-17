@@ -40,6 +40,13 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://gravelscope.website/#organization",
+      "name": "GravelScope",
+      "url": "https://gravelscope.website/",
+      "email": "hello@gravelscope.website"
+    },
+    {
       "@type": "WebSite",
       "@id": "https://gravelscope.website/#website",
       "url": "https://gravelscope.website/",
@@ -50,9 +57,18 @@
       "@id": "https://gravelscope.website/guides/gravel-density-tons-cubic-yards/#article",
       "headline": "Gravel Density: Tons vs Cubic Yards",
       "description": "Understand gravel density, cubic yards and tons, why aggregate weight varies, and when supplier density gives a better estimate.",
-      "isPartOf": {"@id": "https://gravelscope.website/#website"},
+      "isPartOf": {
+        "@id": "https://gravelscope.website/#website"
+      },
       "articleSection": "Gravel Planning Guide",
-      "inLanguage": "en"
+      "inLanguage": "en",
+      "dateModified": "2026-10-17",
+      "author": {
+        "@id": "https://gravelscope.website/#organization"
+      },
+      "publisher": {
+        "@id": "https://gravelscope.website/#organization"
+      }
     },
     {
       "@type": "BreadcrumbList",

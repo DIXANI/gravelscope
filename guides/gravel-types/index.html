@@ -4,6 +4,13 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://gravelscope.website/#organization",
+      "name": "GravelScope",
+      "url": "https://gravelscope.website/",
+      "email": "hello@gravelscope.website"
+    },
+    {
       "@type": "WebSite",
       "@id": "https://gravelscope.website/#website",
       "url": "https://gravelscope.website/",
@@ -18,7 +25,14 @@
         "@id": "https://gravelscope.website/#website"
       },
       "articleSection": "Gravel Material Guide",
-      "inLanguage": "en"
+      "inLanguage": "en",
+      "dateModified": "2026-10-12",
+      "author": {
+        "@id": "https://gravelscope.website/#organization"
+      },
+      "publisher": {
+        "@id": "https://gravelscope.website/#organization"
+      }
     },
     {
       "@type": "BreadcrumbList",

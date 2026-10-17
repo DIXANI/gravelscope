@@ -40,6 +40,13 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://gravelscope.website/#organization",
+      "name": "GravelScope",
+      "url": "https://gravelscope.website/",
+      "email": "hello@gravelscope.website"
+    },
+    {
       "@type": "WebSite",
       "@id": "https://gravelscope.website/#website",
       "url": "https://gravelscope.website/",
@@ -50,9 +57,18 @@
       "@id": "https://gravelscope.website/guides/10x12-gravel-calculator/#article",
       "headline": "How Much Gravel for 10x12 Area? | 10x12 Gravel Calculator",
       "description": "Calculate how much gravel you need for a 10x12 area. Get cubic yards, tons, and bags for 10x12 gravel calculator.",
-      "isPartOf": {"@id": "https://gravelscope.website/#website"},
+      "isPartOf": {
+        "@id": "https://gravelscope.website/#website"
+      },
       "articleSection": "Size Calculator",
-      "inLanguage": "en"
+      "inLanguage": "en",
+      "dateModified": "2026-10-17",
+      "author": {
+        "@id": "https://gravelscope.website/#organization"
+      },
+      "publisher": {
+        "@id": "https://gravelscope.website/#organization"
+      }
     },
     {
       "@type": "BreadcrumbList",
