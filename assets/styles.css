@@ -194,6 +194,8 @@ input:focus,select:focus{border-color:var(--link);box-shadow:0 0 0 3px rgba(0,11
 .result-box span{display:block;color:var(--muted);font-size:12px;margin-bottom:4px}
 .result-box strong{font-size:17px;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
 .result-note{margin:16px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
+/* Numeric figures stay column-aligned (DESIGN.md: tabular numerics) */
+.primary-result strong,.result-box strong{font-variant-numeric:tabular-nums lining-nums;-moz-font-feature-settings:"tnum" 1,"lnum" 1;font-feature-settings:"tnum" 1,"lnum" 1}
 
 /* ---------- Hero description ---------- */
 .hero-description{max-width:var(--max);margin:0 auto;padding:0 24px 48px}
