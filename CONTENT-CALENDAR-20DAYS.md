@@ -261,7 +261,7 @@
 |-----|------|---------|-----|--------|-----------|
 | 1 | 12 Oct | 10x10 Gravel Calculator | /guides/10x10-gravel-calculator/ | ⏳ | |
 | 2 | 13 Oct | 10x12 Gravel Calculator | /guides/10x12-gravel-calculator/ | ✅ | 2026-10-13 |
-| 3 | 14 Oct | 20x20 Gravel Calculator | /guides/20x20-gravel-calculator/ | ⏳ | |
+| 3 | 14 Oct | 20x20 Gravel Calculator | /guides/20x20-gravel-calculator/ | ✅ | 2026-11-11 |
 | 4 | 15 Oct | Gravel Coverage per m2 | /guides/gravel-coverage-per-square-meter/ | ⏳ | |
 | 5 | 16 Oct | 1 Ton Gravel Coverage | /guides/1-ton-gravel-coverage/ | ⏳ | |
 | 6 | 17 Oct | 2 Tons Gravel Coverage | /guides/2-tons-gravel-coverage/ | ⏳ | |
